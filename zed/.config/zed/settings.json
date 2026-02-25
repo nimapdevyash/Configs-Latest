@@ -33,6 +33,7 @@
   "buffer_font_size": 12,
   "buffer_font_family": "ComicShannsMono Nerd Font Mono",
   "terminal": {
+    "dock": "bottom",
     "font_family": "ComicShannsMono Nerd Font Mono",
     "font_size": 12,
   },
@@ -96,6 +97,32 @@
       "title_bar.background": "#15141C",
       "panel.background": "#15141C",
       "panel.focused_border": "#4E466E",
+
+      // 🟣 NORMAL MODE: Calm & Stable
+      // Psychology: A soft lavender/purple. It signals a resting state and blends beautifully with Aura Dark's aesthetic without demanding attention when you are just reading code.
+      "vim.normal.background": "#A277FF",
+      "vim.normal.foreground": "#15141C",
+
+      // 🟢 INSERT MODE: Action & Flow
+      // Psychology: A muted mint green. It gives your brain a subtle "green light" to start typing, signaling active entry and forward momentum.
+      "vim.insert.background": "#61FFCA",
+      "vim.insert.foreground": "#15141C",
+
+      // 🟠 VISUAL MODE: Focus & Selection
+      // Psychology: A warm amber/peach. It mimics a highlighter, instinctively drawing your eye to spatial selections without the alarming urgency of a bright red.
+      "vim.visual.background": "#FFCA85",
+      "vim.visual.foreground": "#15141C",
+
+      // 🔴 REPLACE MODE: Caution & Overwrite
+      // Psychology: A soft coral or pastel red. Replace mode is destructive since you are typing directly over existing code. This acts as a gentle, instinctual "warning" light so you don't accidentally wipe out a block of logic, without being so neon that it causes panic.
+      "vim.replace.background": "#FF757F",
+      "vim.replace.foreground": "#15141C",
+
+      // 🔵 VISUAL LINE MODE: Structure & Breadth
+      // Psychology: A cool cyan or icy blue. While regular Visual Mode (amber) is great for precise, granular selections, Visual Line selects entire structural blocks. Blue represents logic and structure, differentiating it perfectly from inline highlighting.
+      "vim.visual_line.background": "#82AAFF",
+      "vim.visual_line.foreground": "#15141C",
+
       "syntax": {
         "comment": {
           "font_style": "italic",
