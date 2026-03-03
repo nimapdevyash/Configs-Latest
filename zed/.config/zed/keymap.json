@@ -1,7 +1,7 @@
 [
   /*
    * ==========================================================================
-   *                        GLOBAL / WORKSPACE LEVEL
+   * GLOBAL / WORKSPACE LEVEL
    * ==========================================================================
    */
   {
@@ -23,7 +23,7 @@
 
   /*
    * ==========================================================================
-   *                          VIM NORMAL & VISUAL MODE
+   * VIM NORMAL & VISUAL MODE
    * ==========================================================================
    */
   {
@@ -41,17 +41,22 @@
       "space e": "project_panel::ToggleFocus",
 
       // ---------- SEARCH ----------
-      "space s g": "pane::DeploySearch", // Search Global (Project-wide)
-      "space s b": "buffer_search::Deploy", // Search in Buffer (Current File)
+      "space s g": "pane::DeploySearch",
+      "space s b": "buffer_search::Deploy",
 
-      // --------- Buffers or tabs navigation ---------
+      // --------- Buffers / Tabs Navigation ---------
       "space f b": "tab_switcher::Toggle",
-      "space b n": "pane::ActivateNextItem",
-      "space b p": "pane::ActivatePreviousItem",
+      "shift-h": "pane::ActivatePreviousItem", // Tab Left
+      "shift-l": "pane::ActivateNextItem", // Tab Right
       "space b b": "pane::ActivateLastItem",
       "space b d": "pane::CloseActiveItem",
       "space b x": "pane::CloseAllItems",
       "space b l": "pane::ReopenClosedItem",
+
+      // --------- DIAGNOSTICS (Optimized) ---------
+      "space n d": "editor::GoToDiagnostic",
+      "space p d": "editor::GoToPreviousDiagnostic",
+      "space x": "diagnostics::Deploy",
 
       // ---------- Pane Management ----------
       "space w h": "pane::SplitHorizontal",
@@ -86,18 +91,15 @@
       "space d k": "debugger::StepBack",
       "space d t": "debugger::FocusTerminal",
 
-      // ---------- Movel Line Up or Down ----------
+      // ---------- Move Line Up or Down ----------
       "alt-shift-k": "editor::MoveLineUp",
       "alt-shift-j": "editor::MoveLineDown",
-
-      // ---------- Diagnostics ----------
-      "space p d": "diagnostics::Deploy",
     },
   },
 
   /*
    * ==========================================================================
-   *                            VIM INSERT MODE
+   * VIM INSERT MODE
    * ==========================================================================
    */
   {
@@ -109,7 +111,7 @@
 
   /*
    * ==========================================================================
-   *                              DOCKS & TERMINALS
+   * DOCKS & TERMINALS
    * ==========================================================================
    */
   {

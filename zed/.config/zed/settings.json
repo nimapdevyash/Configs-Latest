@@ -113,7 +113,7 @@
   },
   "file_finder": {
     "modal_max_width": "small",
-    "include_ignored": false,
+    "include_ignored": "indexed",
   },
 
   /*
