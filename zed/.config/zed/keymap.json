@@ -118,6 +118,18 @@
     "context": "Dock && !menu",
     "bindings": {
       "space d u": "debug_panel::ToggleFocus",
+
+      // ---------- Pane Traversal ----------
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+
+      // ---------- Pane Resizing ----------
+      "ctrl-shift-h": "vim::ResizePaneLeft",
+      "ctrl-shift-l": "vim::ResizePaneRight",
+      "ctrl-shift-j": "vim::ResizePaneDown",
+      "ctrl-shift-k": "vim::ResizePaneUp",
     },
   },
 ]
