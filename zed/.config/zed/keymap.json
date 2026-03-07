@@ -52,6 +52,8 @@
       "space b d": "pane::CloseActiveItem",
       "space b x": "pane::CloseAllItems",
       "space b l": "pane::ReopenClosedItem",
+      "space b L": "pane::CloseItemsToTheLeft",
+      "space b R": "pane::CloseItemsToTheRight",
 
       // --------- DIAGNOSTICS (Optimized) ---------
       "space n d": "editor::GoToDiagnostic",
