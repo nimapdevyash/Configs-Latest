@@ -7,6 +7,8 @@
       "space i": "project_panel::ToggleHideGitIgnore",
       "space e": "workspace::ToggleLeftDock",
 
+      "space g": "git_panel::Toggle",
+
       // --- LazyVim Inspired CRUD ---
       "space a": "project_panel::NewFile",
       "space r": "project_panel::Rename",
@@ -40,6 +42,7 @@
     "bindings": {
       "space f": "file_finder::Toggle",
       "space e": "project_panel::ToggleFocus",
+      "space g": "git_panel::Toggle",
       "space d u": "debug_panel::ToggleFocus",
     },
   },
@@ -62,6 +65,8 @@
       // ---------- Navigation & UI ----------
       "space f f": "file_finder::Toggle",
       "space e": "project_panel::ToggleFocus",
+
+      "space g": "git_panel::Toggle",
 
       // ---------- SEARCH ----------
       "space s g": "pane::DeploySearch",
