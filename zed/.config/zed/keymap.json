@@ -55,6 +55,8 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
+      "space space": "workspace::Save",
+
       // ---------- LSP / Code Actions ----------
       "shift-k": "editor::Hover",
       "space c f": "editor::Format",
@@ -67,6 +69,8 @@
       "space e": "project_panel::ToggleFocus",
 
       "space g": "git_panel::Toggle",
+      "space t": "terminal_panel::Toggle",
+      "space n t": "workspace::NewTerminal",
 
       // ---------- SEARCH ----------
       "space s g": "pane::DeploySearch",
@@ -163,3 +167,4 @@
     },
   },
 ]
+
