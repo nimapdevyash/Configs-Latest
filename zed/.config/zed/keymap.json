@@ -44,6 +44,9 @@
       "space e": "project_panel::ToggleFocus",
       "space g": "git_panel::Toggle",
       "space d u": "debug_panel::ToggleFocus",
+
+      "space t": "terminal_panel::Toggle",
+      "space n t": "workspace::NewTerminal",
     },
   },
 
@@ -152,6 +155,10 @@
     "context": "Dock && !menu",
     "bindings": {
       "space d u": "debug_panel::ToggleFocus",
+
+      "space t": "terminal_panel::Toggle",
+      "space n t": "workspace::NewTerminal",
+      "space x": "pane::CloseActiveItem",
 
       // ---------- Pane Traversal ----------
       "ctrl-h": "workspace::ActivatePaneLeft",
