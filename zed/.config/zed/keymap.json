@@ -35,6 +35,9 @@
       "alt-h": "workspace::ToggleLeftDock",
       "alt-j": "workspace::ToggleBottomDock",
       "alt-l": "workspace::ToggleRightDock",
+
+      "space p r": "projects::OpenRecent", // "Project Recent"
+      "space p o": "workspace::Open",
     },
   },
   {
