@@ -35,12 +35,6 @@
       "alt-h": "workspace::ToggleLeftDock",
       "alt-j": "workspace::ToggleBottomDock",
       "alt-l": "workspace::ToggleRightDock",
-
-      "space p r": "projects::OpenRecent", // "Project Recent"
-      "space p o": "workspace::Open",
-      "space f o": "workspace::OpenFiles",
-      "space f n": "workspace::NewFile",
-      "space t n": "workspace::NewCenterTerminal",
     },
   },
   {
@@ -50,6 +44,17 @@
       "space e": "project_panel::ToggleFocus",
       "space g": "git_panel::Toggle",
       "space d u": "debug_panel::ToggleFocus",
+    },
+  },
+
+  {
+    "context": "EmptyPane || vim_mode == normal  ",
+    "bindings": {
+      "space p r": "projects::OpenRecent", // "Project Recent"
+      "space p o": "workspace::Open",
+      "space f o": "workspace::OpenFiles",
+      "space f n": "workspace::NewFile",
+      "space t n": "workspace::NewCenterTerminal",
     },
   },
 
