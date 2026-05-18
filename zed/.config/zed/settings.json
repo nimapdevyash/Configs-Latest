@@ -4,6 +4,25 @@
    * EDITOR CORE & VIM BEHAVIOR
    * ==========================================================================
    */
+  "edit_predictions": {
+    "provider": "zed",
+  },
+  "agent_servers": {
+    "your_agent": {
+      "type": "custom",
+      "command": "path_to_executable",
+    },
+  },
+  "cli_default_open_behavior": "existing_window",
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
   "vim_mode": true,
   "relative_line_numbers": "enabled",
   "cursor_blink": false,
@@ -17,15 +36,21 @@
   "format_on_save": "on",
   "ensure_final_newline_on_save": true,
   "remove_trailing_whitespace_on_save": true,
-
   /*
    * ==========================================================================
-   * AI & AGENT RESTRICTIONS (DISABLED)
+   * AI & AGENT CONFIGURATION (GEMINI PRO)
    * ==========================================================================
    */
-  "disable_ai": true,
+  "disable_ai": false,
   "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
     "button": false,
+    "default_model": {
+      "enable_thinking": true,
+      "provider": "google",
+      "model": "gemini-2.5-pro",
+    },
   },
 
   /*
@@ -47,16 +72,16 @@
       "settings": {
         "typescript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
+            "enabled": "always",
+          },
         },
         "javascript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
-        }
+            "enabled": "always",
+          },
+        },
       },
-      "enable_lsp_tasks": true
+      "enable_lsp_tasks": true,
     },
     "eslint": {
       "settings": {
@@ -72,14 +97,14 @@
    * TYPOGRAPHY & FONTS
    * ==========================================================================
    */
-  "ui_font_size": 12,
+  "ui_font_size": 16.0,
   "ui_font_family": "ComicShannsMono Nerd Font Mono",
-  "buffer_font_size": 12,
+  "buffer_font_size": 16.0,
   "buffer_font_family": "ComicShannsMono Nerd Font Mono",
   "terminal": {
     "dock": "bottom",
     "font_family": "ComicShannsMono Nerd Font Mono",
-    "font_size": 12,
+    "font_size": 16.0,
   },
 
   /*
@@ -103,6 +128,7 @@
     "show_tab_bar_buttons": false,
   },
   "toolbar": {
+    "breadcrumbs": true,
     "quick_actions": false,
   },
   "gutter": {
@@ -120,8 +146,9 @@
    * ==========================================================================
    */
   "project_panel": {
+    "dock": "left",
     "hide_gitignore": false,
-    "hide_hidden": false,
+    "hide_hidden": true,
     "auto_fold_dirs": false,
     "starts_open": false,
     "scrollbar": {
